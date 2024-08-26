@@ -176,16 +176,21 @@ span {
 /* section 1 */
 .first-section {
   height: 620px;
-  margin-top: 0;
+  margin-top: 10rem;
   padding-top: 0;
   /* background: linear-gradient(rgba(44, 174, 186, 0.9), rgba(0, 0, 0, 0.1)), */
   background: url("Assets/main.png") center/cover no-repeat;
+  position: relative;
 }
 .color {
   color: var(--clr-white);
   margin-top: 10rem;
   margin-bottom: 2rem;
   font-size: 40px;
+}
+.section-items {
+  position: absolute;
+  transform: translateX(-25%, 25%);
 }
 .btn {
   color: skyblue;
@@ -221,7 +226,7 @@ span {
   object-fit: cover;
 }
 .second-section {
-  height: 1300px;
+  height: 1540px;
   border: 2px solid skyblue;
 }
 .h3,
@@ -262,14 +267,14 @@ span {
 }
 .john {
   position: absolute;
-  transform: translate(185%, -350%);
+  transform: translate(90%, -250%);
 }
 .female {
   height: 88px;
   width: 88px;
   position: relative;
   margin: 1rem;
-  transform: translate(50%);
+  transform: translate(-15%, -10%);
 }
 .single {
   border: 5px solid blue;
@@ -306,6 +311,14 @@ span {
   height: 40px;
   width: 40px;
   justify-self: center;
+  position: relative;
+  margin-bottom: 5rem;
+}
+.text1 {
+  position: absolute;
+  text-align: center;
+  max-width: 12rem;
+  transform: translate(8%, -40%);
 }
 .extra {
   display: grid;
