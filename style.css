@@ -237,11 +237,12 @@ span {
 @media screen and (min-width: 900px) {
   .second-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, auto);
     column-gap: 0.5rem;
   }
   .text {
-    align-self: center;
+    align-self: stretch;
+    margin-left: 2rem;
   }
   .second-section {
     max-height: 700px;
@@ -291,6 +292,7 @@ span {
   box-sizing: content-box;
   border-radius: 10px;
   width: calc(300px - 1.25rem);
+  margin-left: 0;
 }
 .h2 {
   text-align: center;
@@ -340,14 +342,18 @@ span {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr;
     column-gap: 2rem;
+    padding-left: 1rem;
+    background: lightblue;
   }
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: lightblue;
   }
   .date,
   .end {
     justify-self: end;
+    margin-right: 2rem;
   }
 }
 .prop {
